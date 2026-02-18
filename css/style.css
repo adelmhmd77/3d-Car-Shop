@@ -1,0 +1,345 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  background: #313131;
+  z-index: 999999;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 16px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 3px 15px;
+  font-family: "Chakra Petch";
+}
+header nav ul li a:hover {
+  background: #fff;
+  color: #1c1c1c;
+}
+header i {
+  font-size: 25px;
+  color: white;
+}
+header img {
+  width: 15%;
+}
+.products {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+  gap: 50px;
+  align-items: center;
+}
+.section-title {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Audiowide", sans-serif;
+  color: rgb(88, 88, 88);
+  text-shadow: 0 0 50px #0b0b0b;
+}
+.products li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(to left bottom, #1c1c1c, #4c4c4c, #313131);
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 20%;
+}
+.products li h3 {
+  color: #f5f5f5;
+  font-size: 25px;
+  font-family: "Chakra Petch";
+  padding-top: 20px;
+  width: 100%;
+  margin: auto;
+}
+.products li .price {
+  font-size: 18px;
+  position: absolute;
+  background: white;
+  color: #1c1c1c;
+  font-weight: bold;
+  font-family: "Chakra Petch";
+  padding: 2px 10px;
+  border-radius: 15px;
+  top: 180px;
+}
+.products li iframe {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.products li button {
+  padding: 5px 15px;
+  margin: 0px 5px;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-family: "Chakra Petch";
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+}
+.products li button:hover {
+  background: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+.cart-shopping {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 25px;
+  background: #1c1c1c;
+  color: #fff;
+  border-radius: 50%;
+  padding: 30px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.cart-shopping i {
+  position: relative;
+}
+.cart-shopping i p {
+  font-size: 10px;
+  position: absolute;
+  top: 2px;
+  left: 30%;
+  color: black;
+}
+
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: rgb(30, 30, 30);
+  padding: 0px 50px 50px 50px;
+  font-family: "Audiowide", sans-serif;
+  text-shadow: 0 0 20px #ffffff;
+  font-size: 30px;
+  text-align: center;
+}
+.hero-content button {
+  padding: 10px 35px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  font-family: "Audiowide", sans-serif;
+  border: 2px solid white;
+  transition: all 0.5s ease;
+}
+.hero-content button:hover {
+  background: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+.pro {
+  padding: 50px;
+  margin-bottom: 150px;
+}
+.cart {
+  display: flex;
+  justify-content: space-evenly;
+}
+.prs {
+  border: 2px solid black;
+  padding: 15px 50px 15px 50px;
+  font-family: "Chakra Petch";
+  border-radius: 20px;
+  line-height: 1.8;
+}
+.prs h2 {
+  font-family: "Audiowide", sans-serif;
+  margin-bottom: 20px;
+}
+
+.total {
+  border: 2px solid black;
+  padding: 15px 50px 15px 50px;
+  font-family: "Chakra Petch";
+  border-radius: 20px;
+  line-height: 1.8;
+  font-weight: bold;
+  font-size: 18px;
+}
+.total h2 {
+  font-family: "Audiowide", sans-serif;
+  margin-bottom: 20px;
+}
+footer {
+  width: 100%;
+  padding: 5px;
+  background: #313131;
+  text-align: center;
+  color: white;
+  font-family: "Audiowide", sans-serif;
+}
+
+footer a {
+  color: aquamarine;
+}
+
+/* ============================= */
+/* =======  TABLET 1024px ====== */
+/* ============================= */
+@media (max-width: 1024px) {
+
+  header {
+    padding: 20px;
+  }
+
+  header img {
+    width: 25%;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .hero-content {
+    font-size: 24px;
+    padding: 0 30px 30px 30px;
+  }
+
+}
+
+
+/* ============================= */
+/* =======  MOBILE 768px ======= */
+/* ============================= */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    position: static;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header img {
+    width: 40%;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .products li .price {
+    top: 150px;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-content {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .cart {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .prs,
+  .total {
+    width: 90%;
+    text-align: center;
+  }
+
+  .pro {
+    padding: 20px;
+  }
+
+}
+
+
+/* ============================= */
+/* ======= SMALL MOBILE 480px == */
+/* ============================= */
+@media (max-width: 480px) {
+
+  header img {
+    width: 60%;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .hero-content {
+    font-size: 16px;
+  }
+
+  .hero-content button {
+    padding: 8px 20px;
+  }
+
+  .cart-shopping {
+    bottom: 15px;
+    right: 15px;
+    padding: 20px;
+  }
+
+}
